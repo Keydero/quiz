@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	margin: 0px;
+	font-family: 'Questrial', sans-serif;
+	color: black;
+	transition: 0.1s;
+}
+p {
+	color: rgb(51, 51, 51);
+	font-family: 'Helvetica';
+	margin: 0px;
+
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Helvetica';
+	font-size: 1.4em;
+}
+h1:hover {
+	color: red;
+	transition: 0.3s;
+}
+body {
+	background-color: #ecf0f1;
+	height: auto;
+}
+
+.wrapper {
+	width: 80%;
+	margin: auto;
+	height: auto;
+	background-color: #1cc7d0;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} 
+
+.page {
+	width: 99%;
+	margin: auto;
+	height: auto;
+}
+.category-banner {
+	height: 300px;
+}
+.category {
+	padding-left: 4%;
+	padding-right: 4%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.cards {
+	margin-top: 40px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+/*	justify-content: center;*/
+/*	flex-wrap: wrap;*/
+	padding-left: 25px;
+	padding-right: 25px;
+	flex-wrap: wrap;
+
+}
+.card {
+/*	border: 3px solid #B2DBBF;*/
+	border-radius: 4px;
+	padding: 5px 15px;
+	width: 25%;
+	min-width: 175px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+	background-color: white;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
+	align-items: center;
+	height: 180px;
+}
+.card-header {
+	text-align: center;
+}
+.card-body {
+	height: 70px;
+	padding: 9px 0px;
+}
+.card-footer {
+	margin: auto;
+	text-align: center;
+	background-color: #2dde98;
+	border-radius: 20px;
+	width: 40%;
+	transition: 0.1s;
+}
+.card-footer:hover {
+	filter: brightness(1.1);
+	border-radius: 20px;
+}
+a {
+	color:gray;
+}
+.card-body-text { 
+	margin-top: 10px;
+ }
+.card-footer-text {
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	padding: 8px 0px;
+}
+
+
+.category-header {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	display: flex;
+	justify-content: center;
+	opacity: 0.7;
+	border-radius: 3px;
+}
+.header-quiz {
+	height: 100vh;
+	background-color: #1cc7d0;
+	margin-bottom: 25px;
+	border-bottom: 3px solid #e67e22;
+}
+.welcome {
+	display: flex;
+	color: white;
+	font-size: 1.3rem;
+	min-width: 614px;
+}
+.logo {
+	width: 66%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	background-color: rgb(162, 220, 174);
+	  box-shadow: 0 3px 6px rgba(255,255,255,0.16), 0 3px 6px rgba(255,255,255,0.23);
+	  border: 3px solid white;
+	border-radius: 4px;
+}
+.logo-bg {
+	width: 256px;
+	height: 256px;
+	background-image: url('/nerd.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+strong {
+	letter-spacing: 10px;
+}
+.navbar {
+	height: 50px;
+	background-color: white;
+	margin-bottom: 50px;
+}
+.discover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	color: white;
+	font-size: 2.7rem;
+	font-family: 'Questrial', sans-serif;
+}
+
+
+.p {
+  color: white; 
+  font-family: "Courier";
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+.p:nth-child(2){
+  animation: type2 10s steps(60, end);
+}
+
+
+
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+
+
+.red {
+	background-color: #ff4f81;
+}
+.orange {
+
+}
+.blue {
+	background-color: #00aeff;
+}
+.green {
+	background-color: #3369e7;
+}
+.yellow {
+	background-color: #ffc168;
+}
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login-wrapper {
+	height: 300px;
+	width: 30%;
+	display: inline-flex;
+	justify-content: center;
+
+}
+label {
+	font-family: 'Helvetica', sans-serif;
+	color: #00aeff;
+	margin: 5px;
+
+}
+.logged {
+	padding-left: 10px;
+}
+form {
+	display: inline-flex;
+	flex-direction: column;
+	margin: auto;
+	border: 1px solid #3369e7;
+	padding: 20px;
+	border-radius: 8px;
+}

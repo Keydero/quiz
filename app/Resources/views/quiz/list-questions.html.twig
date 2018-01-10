@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<header class="header">
+</header>
+  <section class="wrapper">
+    <div class="page">    
+      <div class="category">
+        <div class="category-header">   
+         
+          <h2>xxxxx</h2>
+          
+        </div>
+        <div class="cards">
+         {% for quiz in quizs %}
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="body-header">
+            <p>
+              {{quiz.question}}
+            </p>
+          </div>
+          <div class="footer-header">
+            <p>
+              
+            </p>
+          </div>
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

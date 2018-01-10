@@ -1,0 +1,10 @@
+Searching 8913 files for " prefix: /register"
+
+/Users/oussama-keddar/code/quiz/vendor/friendsofsymfony/user-bundle/Resources/doc/routing.rst:
+   21          fos_user_register:
+   22              resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+   23:             prefix: /register
+   24  
+   25          fos_user_resetting:
+
+1 match in 1 file

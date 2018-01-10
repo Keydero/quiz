@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<header class="header-quiz">
+  <div class="navbar"></div>
+  <div class="logo">
+      <div class="welcome">
+    <p> 
+
+    </div><div class="logo-bg">
+  </div>
+
+</div>
+<div class="discover"> <strong>Découvrir nos catégories</strong> </div>
+</header>
+
+
+  <section class="wrapper">
+  	<div class="page">    
+  		<div class="category red">
+        <div class="category-header">   
+          <h2>Animaux</h2>
+        </div>
+        <div class="cards">
+          {% for animal in animals %}
+  			<div class="card">
+  				<div class="card-header">
+  					<a href="/list/{{ animal.id }}"> {{ animal.name }} </a>
+  				</div>
+          <div class="card-body">
+            <p>
+              My card content
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="/list/{{ animal.id }}"><p class="card-footer-text">
+              Jouer
+            </p>
+          </a>
+          </div>
+  			</div>
+          {% endfor %}
+        </div>
+  		</div>
+      <div class="category green">
+        <div class="category-header">   
+          <h2>Sports</h2>
+        </div>
+        <div class="cards">
+          {% for sport in sports %}
+          <div class="card">
+          <div class="card-header">
+            <a href="/list/{{ sport.id }}"> {{ sport.name }} </a>
+          </div>
+          <div class="card-body">
+            <p>
+              My card content
+            </p>
+          </div>
+          <div class="card-footer">
+           <a href="/list/{{ sport.id }}"> <p class="card-footer-text">
+              Jouer
+            </p>
+            </a>
+          </div>
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="category yellow">
+        <div class="category-header">   
+          <h2>Science et Technologies</h2>
+        </div>
+        <div class="cards">
+         {% for science in sciences %}
+        <div class="card">
+          <div class="card-header">
+            <a href="/list/{{ science.id }}"> {{ science.name }} </a>
+          </div>
+          <div class="card-body">
+            <p>
+              My card content
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="/list/{{ science.id }}"><p class="card-footer-text">
+              Jouer
+            </p>
+            </a>
+          </div>
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="category blue">
+        <div class="category-header">   
+          <h2>Arts et cultures</h2>
+        </div>
+        <div class="cards">
+         {% for art in arts %}
+        <div class="card">
+          <div class="card-header">
+            <a href="/list/{{ art.id }}"> {{ art.name }} </a>
+          </div>
+          <div class="card-body">
+            <p>
+              My card content
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="/list/{{ art.id }}"><p class="card-footer-text">
+              Jouer
+            </p>
+            </a>
+          </div>
+        </div>
+          {% endfor %}
+        </div>
+      </div>
+  	</div>
+  </section>
+{% endblock %}
